@@ -20,7 +20,7 @@ def download_youtube_video(youtube_url):
     [
       "yt-dlp",
       "-f", "best[ext=mp4]",
-      "-o", os.path.join(video_directory, "%(title)s.%(ext).s"),
+      "-o", os.path.join(video_directory, "%(title)s.%(ext)s"),
       youtube_url
     ],
     capture_output=True,
