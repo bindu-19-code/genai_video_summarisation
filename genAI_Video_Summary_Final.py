@@ -91,7 +91,7 @@ if youtube_url:
       st.session_state["summary"] = summary
 
     st.markdown("### Video Summary:")
-    st.amrkdown(summary)
+    st.markdown(summary)
 
   except Exception as e:
     st.error(f" Error: {e}")
@@ -107,7 +107,7 @@ if uploaded_file:
       f.write(uploaded_file.getbuffer())
 
     extract_frames(saved_path)
-    summary = descibe_video()
+    summary = describe_video()
     st.session_state["summary:"] = summary
 
   st.markdown("### Summary of Uploaded Video:")
