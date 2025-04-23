@@ -18,7 +18,7 @@ model = ChatGroq(
 def download_youtube_video(youtube_url):
   result = subprocess.run(
     [
-      "yt-dip",
+      "yt-dlp",
       ".f", "best[ext=mp4]",
       "-o", os.path.join(video_directory, "%(title)s.%(ext).s"),
       youtube_url
