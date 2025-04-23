@@ -87,7 +87,7 @@ if youtube_url:
     with st.spinner("Downloading and summarizing video..."):
       video_path = download_youtube_video(youtube_url)
       extract_frames(video_path)
-      summaary = describe_video()
+      summary = describe_video()
       st.session_state["summary"] = summary
 
     st.markdown("### Video Summary:")
