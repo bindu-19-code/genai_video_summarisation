@@ -5,7 +5,7 @@ from pytube import YouTube
 import subprocess
 from langchain_groq import ChatGroq
 
-video_directory = 'video/'
+video_directory = 'videos/'
 frames_directory = 'frames/'
 os.makedirs(video_directory, exist_ok=True)
 os.makedirs(frames_directory, exist_ok=True)
