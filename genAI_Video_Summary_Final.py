@@ -67,7 +67,7 @@ def describe_video():
     frame_path = os.path.join(frames_directory, file)
     descriptions.append(f"{file}")
   prompt = "You are a helpful assistant. Summarize the video based on the follwoing frame filenames:\n" + "\n".join(descriptions)
-  return mode.invoke(prompt)
+  return model.invoke(prompt)
 
 def rewrite_summary(summary):
   prompt = f"Please rewrite this video summary in a polished and easy-to-understand way:\n\n{summary}"
