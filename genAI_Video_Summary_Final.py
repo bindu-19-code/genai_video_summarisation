@@ -3,7 +3,7 @@ import cv2
 import streamlit as st
 from pytube import YouTube
 import subprocess
-from langchain_groq import Chatgroq
+from langchain_groq import ChatGroq
 
 video_directory = 'video/'
 frames_directory = 'frames/'
