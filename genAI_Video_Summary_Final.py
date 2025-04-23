@@ -47,7 +47,7 @@ def extract_frames(video_path, interval_second=5):
   current_frame = 0
   frame_number = 1
 
-  while current_time <= frames_count:
+  while current_frame <= frames_count:
     video.set(cv2.CAP_PROP_POS_FRAMES, current_frame)
     success, frame = video.read()
     if not success:
