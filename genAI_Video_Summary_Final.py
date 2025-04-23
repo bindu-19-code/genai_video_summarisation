@@ -10,7 +10,7 @@ frames_directory = 'frames/'
 os.makedirs(video_directory, exist_ok=True)
 os.makedirs(frames_directory, exist_ok=True)
 
-model -Chatgroq(
+model = Chatgroq(
   groq_api_key=st.secrets("GROQ_API_KEY"),
   model_name="mets-llma/llma-4-scout-17b-16e-instruct"
 )
